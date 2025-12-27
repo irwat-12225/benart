@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de BEN'ART : Manifeste et Équipe</title>
+    <link rel="stylesheet" href="styles.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="content-container">
+            <nav class="nav-container">
+                <div class="logo">
+                    <a href="index.html">BEN'<span>ART</span></a> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="acceuil.html">Accueil</a></li>
+                    <li><a href="collectif.html">Le Collectif</a></li>
+                    <li><a href="projet.html">Nos Projets</a></li>
+                    <li><a href="a-propos.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="soutenir.html" class="cta-button-header">SOUTENIR LE BUDGET</a>
+                <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero-subpage manifesto-hero">
+            <div class="content-container">
+                <h1>Notre Manifeste : Redonner Valeur et Espoir par l'Art.</h1>
+                <p class="hero-subpage-subtitle">
+                    Nous sommes l'Art comme Acte de Résistance. Notre mission est d'utiliser la création pour détourner l'attention de la guerre et du banditisme vers un avenir culturel structuré.
+                </p>
+                <a href="#equipe" class="cta-button secondary large">Rencontrer l'Équipe &rarr;</a>
+            </div>
+        </section>
+
+        <section class="problem-solution-section">
+            <div class="content-container">
+                
+                <div class="ps-grid">
+                    
+                    <div class="ps-block problem">
+                        <span class="ps-icon">💔</span>
+                        <h2>Le Problème : La Fuite des Talents</h2>
+                        <p>La ville de Beni n'hérite principalement que d'aide humanitaire (alimentaire). Or, cette aide, bien qu'essentielle, ne palpe pas l'état psychologique des jeunes ni ne garantit leur avenir.</p>
+                        <p class="emphasis-text">Abandonnés à leur propre effort, **de nombreux jeunes ont rejoint des groupes armés, des gangs, mettant en péril leur talent et leur vie.**</p>
+                    </div>
+
+                    <div class="ps-block solution">
+                        <span class="ps-icon">🤝</span>
+                        <h2>Notre Solution : Le Pont BEN'ART</h2>
+                        <p>Nous portons la main à ceux qui luttent pour rester dans la course. BEN'ART est un **pont pour l'encadrement, le *boostage* et le plaidoyer** en faveur des jeunes artistes.</p>
+                        <p class="emphasis-text">Notre action vise à fournir des centres de formations culturelles et d'appui aux jeunes artistes de Beni, transformant la frustration en expression créative.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="equipe" class="team-section">
+            <div class="content-container">
+                <h2 class="text-center-wrapper">Les Visionnaires et les Encadreurs</h2>
+                <p class="text-center-wrapper subtitle">Notre équipe est composée d'artistes engagés, d'experts culturels et de leaders communautaires.</p>
+
+                <div class="team-grid">
+                    
+                    <div class="team-member-card">
+                        <img src="images/membre_franck.jpg" alt="Photo de Ir Franck" class="member-photo"> 
+                        <div class="member-details">
+                            <h3>Ir Franck</h3>
+                            <p class="member-role">Fondateur & Coordinateur Général</p>
+                            <p class="member-bio">Visionnaire derrière le Collectif, il assure la direction stratégique et le plaidoyer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <img src="images/membre_alice.jpg" alt="Photo d'Alice" class="member-photo">
+                        <div class="member-details">
+                            <h3>Alice M.</h3>
+                            <p class="member-role">Chargée des Partenariats</p>
+                            <p class="member-bio">Experte en développement de projets et financement, elle est le lien clé avec les ONG.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member-card">
+                        <img src="images/membre_david.jpg" alt="Photo de David" class="member-photo">
+                        <div class="member-details">
+                            <h3>David L.</h3>
+                            <p class="member-role">Encadreur Principal (Arts Visuels)</p>
+                            <p class="member-bio">Artiste reconnu, il dirige les ateliers de peinture et de dessin pour les jeunes talents.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        </footer>
+
+    <script src="nag.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+          document.getElementById("loader").style.display = "none";
+        },1700);
+      </script>
+      
+</body>
+<div id="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">BEN'ART</p>
+</div>
+</html>
