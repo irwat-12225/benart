@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci pour votre Soutien</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        </header>
+    
+    <main>
+        <section class="hero-subpage" style="background-color: var(--color-light); color: var(--color-dark);">
+            <div class="content-container" style="padding: 100px 0;">
+                <h1 style="color: var(--color-primary);">Merci pour votre Demande de Partenariat !</h1>
+                <p class="hero-subpage-subtitle">
+                    Votre proposition a été reçue avec succès par le Collectif BEN'ART. 
+                    Notre équipe des partenariats vous recontactera à l'adresse fournie (**<?php echo htmlspecialchars($email); ?>**) dans les meilleurs délais.
+                </p>
+                <a href="index.html" class="cta-button primary large" style="margin-top: 30px;">Retour à l'Accueil</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+         </footer>
+         <script src="nag.js"></script>
+         <script>
+            window.addEventListener("load", function () {
+              document.getElementById("loader").style.display = "none";
+            },1700);
+          </script>
+          
+</body>
+<div id="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">BEN'ART</p>
+</div>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collectif Ben'Art - Dossier de Présentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        :root {
+            --primary-color:rgb(17, 17, 17);
+            --accent-color: #d4af37; /* Couleur Or pour le côté "Pro/Premium" */
+            --text-light: #f4f4f4;
+            --text-dark: #333;
+            --bg-gradient: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            --card-bg: #ffffff;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* font-family: 'Montserrat', sans-serif; */
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #00bb73;
+        }
+
+        /* --- Header & Hero Section --- */
+        header {
+            background: var(--bg-gradient);
+            color: var(--text-light);
+            padding: 100px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: -50px auto 50px;
+            padding: 0 20px;
+        }
+
+        /* --- Section Styling --- */
+        section {
+            background: var(--card-bg);
+            padding: 60px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 20px;
+        }
+
+        p { margin-bottom: 20px; text-align: justify; }
+
+        /* --- Attentes & Objectifs (Grille) --- */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            border-bottom: 3px solid var(--accent-color);
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* --- Activités Phares & Domaines (Images) --- */
+        .image-placeholder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .item-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 250px;
+            background: #eee;
+        }
+
+        .item-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s;
+        }
+
+        .item-box .label {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            color: #fff;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* --- Collaborateurs --- */
+        .collab-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .collab-tag {
+            background: var(--primary-color);
+            color: var(--accent-color);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .collab-img-circle {
+            width: 40px;
+            height: 40px;
+            background: #444;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            section { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+       
+        <h1>Collectif Ben'Art</h1>
+        <p>L'Art comme moteur de paix et de changement à Beni.</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="description">
+            <h2>Description du Projet</h2>
+            <p><strong>Ben'Art</strong> est un collectif d’artistes peintres, poètes, danseurs, slameurs,
+                comédiens, humoristes, chanteurs, dessinateurs, conteurs, cin éastes ...qui agissent ensemble
+                pour des productions communes et de plaidoiries afin d’avoir autour d’eux des centres des
+                formations culturelles et d’appui aux jeunes artistes de Beni. Dans ces débuts Ben ‘Art se
+                veut lui-même être un centre culturel pour l’encadrement des jeunes, la production
+                d’évènements culturels, l’espace d’échange d’expérience artistique et la rencontre de plusieurs
+                groupes d’artistes.</p>
+        </section>
+
+        <section id="contexte">
+            <h2>Contexte & Justification</h2>
+            <p>La ville cosmopolite de Beni regorge des jeunes talents désireux de vivre au
+                quotidien de leur art. Le ravage de la guerre et des conflits armés accentués par des massacres
+                en répétition n’a pas accordé à la ville de Beni du crédit parmi tant d’autres villes Africaines
+                qui peuvent facilement recevoir des fonds dans les domaines culturels tandis que Beni n’hérite
+                principalement que d’aide humanitaire (alimentaire) pour les déplacés des guerres, orphelins,
+                femmes violées, vulnérables, etc. Cela est un bon rendement pour un instant, mais il ne résout
+                ni le quotidien des bénéficiaires, ni garantir leur avenir, ni palper leur état psychologique.
+                Dans une étude plus large, la situation macabre de la ville de Beni ne lui accorde pas une
+                bonne publicité et cela fait peur aux acteurs de l’industrie culturelle extérieurs d’où le
+                domaine culturel local traine à décoller pourtant regorgeant un nombre incalculable des
+                talents. Dans une autre sphère, ces jeunes talents abandonnés à leur propre effort jusque parce
+                qu’ils habitent une ville qui fait peur n’arrive pas tous à développer un état psychologique
+                pacifique en menant une vie saine uniquement basée sur leur passion (l’art) ; nombreux sont
+                ceux qui ont rejoint des groupes armés, des strates de fumeurs des chanvres, des gangs etc.
+                mettant ainsi en péril un talent initialement annoncé prolifique et permettant ainsi la
+                pérennisation de l’insécurité dans le milieu. Donc dans le présent projet, nous portons la main
+                à tous ces jeunes qui ont dû contre vent et marrée lutter pour rester dans la course, mais aussi
+                encadrer les nouveaux talents et faire appel à tous ceux qui ont cédé à la pression de revenir
+                sur le bon chemin et utiliser positivement leur art. Ben ’Art veut être :
+                1. un collectif qui redonne de la valeur à l’art local et de l’espoir aux jeunes talents de
+                Beni longtemps à leur propre sort ainsi contribuer à la pacification de la région, donner
+                un langage commun (l‘art) aux communautés locales amoureuses de la culture.
+                
+                2. Rappeler aux grands acteurs culturels internes et surtout externes de la ville de Beni
+                que l’art s’exprime mieux quand il y a des difficultés et donc la ville de Beni a besoin
+                d’être rapproché pour qu’elle s’exprime en cette période difficile au lieu d’être crainte
+                et laissée aux abois
+                3. Approcher les pacifistes, les humanitaires afin de leur offrir une autre manière de
+                parler de la paix, une autre manière de sensibiliser les communautés bénéficiaires des
+                différentes aides, services etc.</p>
+        </section>
+
+        <section id="attentes">
+            <h2>Attentes du Projet</h2>
+            <div class="grid-container">
+                <div class="feature-card">
+                    <p>✓ Armer les artistes de compétences techniques selon leurs domaines respectifs.</p>
+                </div>
+                <div class="feature-card">
+                    <p>✓ Créer une plateforme de visibilité pour vendre les œuvres et se faire découvrir.</p>
+                </div>
+                <div class="feature-card">
+                    <p>✓ Favoriser l'entrepreneuriat artistique pour permettre aux jeunes de vivre de leur art.</p>
+                </div>
+                <div class="feature-card">
+                    <p>✓ Devenir une référence régionale en matière d'encadrement culturel d'ici 5 ans.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="objectifs">
+            <h2>Objectifs Stratégiques</h2>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 15px;">➤ <strong>Stimuler</strong> l'effort des jeunes pour professionnaliser leur passion.</li>
+                <li style="margin-bottom: 15px;">➤ <strong>Former</strong> la jeunesse locale grâce à l'intervention d'experts.</li>
+                <li style="margin-bottom: 15px;">➤ <strong>Faire connaître</strong> les talents de Beni au niveau national et international.</li>
+                <li style="margin-bottom: 15px;">➤ <strong>Servir de pont</strong> pour la création d'autres structures culturelles, comme un Institut Français.</li>
+            </ul>
+        </section>
+
+        <section id="activites">
+            <h2>Activités Phares</h2>
+            <p>Nos interventions majeures pour dynamiser la scène culturelle :</p>
+            <div class="image-placeholder-grid">
+                <div class="item-box">
+                    <img src="images.jpg" alt="Formation">
+                    <div class="label">Formation Artistique </div>
+                </div>
+                <div class="item-box">
+                    <img src="img.jpg" alt="Production">
+                    <div class="label">Production d'Événements </div>
+                </div>
+                <div class="item-box">
+                    <img src="1765663405641.jpg" alt="Concours">
+                    <div class="label">Concours & Ateliers </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="domaines">
+            <h2>Domaines d'Intervention</h2>
+            <div class="image-placeholder-grid">
+                <div class="item-box">
+                    <img src="1765663471908.jpg" alt="Peinture">
+                    <div class="label">Peinture & Dessin</div>
+                </div>
+                <div class="item-box">
+                    <img src="1765663460656.jpg" alt="Théâtre">
+                    <div class="label">Théâtre, Humour & Danse </div>
+                </div>
+                <div class="item-box">
+                    <img src="1765663454193.jpg" alt="Poésie">
+                    <div class="label">Poésie, Slam & Éloquence </div>
+                </div>
+                <div class="item-box">
+                    <img src="1765663398406.jpg" alt="Musique">
+                    <div class="label">Musique & Cinéma </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collaborateurs">
+            <h2>Possibles Collaborateurs</h2>
+            <div class="collab-list">
+                <div class="collab-tag">
+                    <div class="collab-img-circle"></div> Protection de l'Enfance
+                </div>
+                <div class="collab-tag">
+                    <div class="collab-img-circle"></div>
+                    Sensibilisation Humanitaire
+                </div>
+                <div class="collab-tag">
+                    <div class="collab-img-circle"></div>
+                    Droits Humains
+                </div>
+                <div class="collab-tag">
+                    <div class="collab-img-circle"></div>
+                    Environnement & Santé
+                </div>
+                <div class="collab-tag">
+                    <div class="collab-img-circle"></div>
+                    Promotion de la Culture
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Collectif Ben'Art - Projet de Développement Culturel - Beni, RDC</p>
+    </footer>
+    <script src="nag.js" ></script>
+    <script>
+        window.addEventListener("load", function () {
+          document.getElementById("loader").style.display = "none";
+        },1700);
+      </script>
+      
+
+</body>
+<div id="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">BEN'ART</p>
+</div>
+</html>

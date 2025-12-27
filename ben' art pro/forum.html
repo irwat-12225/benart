@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ben'Art | Forum Communautaire</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">BEN'ART</div>
+            <ul class="nav-links">
+                <li><a href="forum.html" class="active">Forum</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="collectif.html">Collectif</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="collectif.html">le collectif</a></li>
+                <li><a href="contact.html"></a>contact</li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <div>
+                <h1>Espace Forum</h1>
+                <p>Discussions stratégiques et échanges artistiques.</p>
+            </div>
+            <button class="btn-black">+ Nouveau Sujet</button>
+        </header>
+
+        <section class="forum-grid">
+            
+            <div class="forum-card">
+                <div class="card-body">
+                    <span class="tag">TECHNIQUE</span>
+                    <h3>Atelier des Maîtres</h3>
+                    <p>Partagez vos méthodes de travail et vos outils préférés.</p>
+                </div>
+                <div class="card-footer">
+                    <span>12 Discussions</span>
+                    <a href="#" class="btn-link">Entrer →</a>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="card-body">
+                    <span class="tag">CRITIQUE</span>
+                    <h3>Revue de Projet</h3>
+                    <p>Soumettez vos travaux pour une analyse professionnelle.</p>
+                </div>
+                <div class="card-footer">
+                    <span>45 Discussions</span>
+                    <a href="#" class="btn-link">Entrer →</a>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="card-body">
+                    <span class="tag">PRO</span>
+                    <h3>Opportunités & Bourses</h3>
+                    <p>Annonces de résidences, concours et appels à projets.</p>
+                </div>
+                <div class="card-footer">
+                    <span>28 Discussions</span>
+                    <a href="#" class="btn-link">Entrer →</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="nag.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+          document.getElementById("loader").style.display = "none";
+        },1700);
+      </script>
+      
+</body>
+<div id="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">BEN'ART</p>
+</div>
+</html>

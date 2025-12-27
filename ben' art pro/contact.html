@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez le Collectif BEN'ART</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="content-container">
+            <nav class="nav-container">
+                <div class="logo">
+                    <a href="index.html">BEN'<span>ART</span></a> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="acceuil.html">Accueil</a></li>
+                    <li><a href="collectif.html">Le Collectif</a></li>
+                    <li><a href="projet.html">Nos Projets</a></li>
+                    <li><a href="a-propos.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="soutenir.html" class="cta-button-header">SOUTENIR LE BUDGET</a>
+                <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero-subpage">
+            <div class="content-container">
+                <h1>Contactez-nous : Construisons Ensemble l'Avenir Culturel.</h1>
+                <p class="hero-subpage-subtitle">
+                    Que ce soit pour un partenariat, une candidature artistique, ou une simple question, notre équipe est prête à vous répondre.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-form-map-section">
+            <div class="content-container">
+                
+                <div class="contact-grid">
+                    
+                    <div class="contact-form-block">
+                        <h2 class="form-title">Envoyez-nous un Message Direct</h2>
+                        <form action="submit_contact.php" method="POST" class="contact-form">
+                            
+                            <div class="form-group-contact">
+                                <label for="contact_name">Votre Nom et Prénom *</label>
+                                <input type="text" id="contact_name" name="contact_name" required>
+                            </div>
+                            <div class="form-group-contact">
+                                <label for="email">Votre Adresse Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group-contact">
+                                <label for="subject">Objet de votre Requête *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Sélectionner l'objet</option>
+                                    <option value="partenariat">Demande de Partenariat</option>
+                                    <option value="candidature">Candidature Artiste / Talent</option>
+                                    <option value="general">Question Générale / Presse</option>
+                                </select>
+                            </div>
+                            <div class="form-group-contact full-width">
+                                <label for="message">Votre Message Détaillé *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button primary-green full-width">Envoyer le Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h2 class="form-title">Nos Coordonnées et Localisation</h2>
+                        
+                        <div class="map-placeholder"><iframe src="https://maps.app.goo.gl/SYdeNDKqr9bD3KFa7" frameborder="0"></iframe>
+                            
+                            <p>Emplacement de notre futur centre culturel et de notre action au cœur de Beni.</p>
+                        </div>
+
+                        <div class="coordinates">
+                            <h3>Adresse Postale</h3>
+                            <p>Collectif BEN'ART</p>
+                            <p>Beni, Nord-Kivu, R.D. Congo</p>
+
+                            <h3>Contacts Clés</h3>
+                            <p>Partenariat: <a href="mailto:partenariat@benart.org">partenariat@benart.org</a></p>
+                            <p>Talents: <a href="mailto:talents@benart.org">talents@benart.org</a></p>
+                            <p>Téléphone: +243 995622161</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        </footer>
+
+    <script src="nag.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+          document.getElementById("loader").style.display = "none";
+        },1700);
+      </script>
+      
+</body>
+<div id="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">BEN'ART</p>
+</div>
+</html>

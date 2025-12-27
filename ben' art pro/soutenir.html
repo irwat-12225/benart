@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soutenir BEN'ART : Budget et Partenariats Stratégiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        </header>
+        
+    <main>
+
+     
+        <section class="hero-subpage">
+            <div class="content-container">
+                <h1>Financer la Paix : Investissez dans l'Avenir Culturel de Beni.</h1>
+                <p class="hero-subpage-subtitle">
+                    Chaque contribution finance un environnement sûr et stimulant pour les jeunes artistes. Notre budget d'installation et de fonctionnement sur 3 ans est de :
+                    <span class="budget-highlight">26 460 $</span>
+                </p>
+                <a href="#donner" class="cta-button primary large">Faire un Don / Soutenir Maintenant</a>
+            </div>
+        </section>
+
+        <section id="budget" class="budget-section">
+            <div class="content-container">
+                <h2 class="text-center-wrapper">Transparence Financière : Budget d'Installation et de Fonctionnement (36 mois)</h2>
+
+                <div class="table-responsive-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Libellé (Poste de Dépense)</th>
+                                <th class="numeric">Quantité</th>
+                                <th class="numeric">Prix Unitaire ($)</th>
+                                <th class="numeric">Prix Total ($)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Location Maison/Espace Culturel</td><td class="numeric">36 mois</td><td class="numeric">200</td><td class="numeric">7 200</td></tr>
+                            <tr><td>2</td><td>Instruments son kit complet</td><td class="numeric">1</td><td class="numeric">4 000</td><td class="numeric">4 000</td></tr>
+                            <tr><td>3</td><td>Podium démontable</td><td class="numeric">1</td><td class="numeric">7 000</td><td class="numeric">7 000</td></tr>
+                            <tr><td>4</td><td>Frais Encadreur (5 personnes)</td><td class="numeric">36 mois</td><td class="numeric">500</td><td class="numeric">1 800</td></tr>
+                            <tr><td>5</td><td>Ordinateurs de bureau</td><td class="numeric">4</td><td class="numeric">450</td><td class="numeric">1 800</td></tr>
+                            <tr><td>6</td><td>Frais d'administration/Internet</td><td class="numeric">36 mois</td><td class="numeric">50</td><td class="numeric">1 800</td></tr>
+                            <tr><td>...</td><td>Frais divers et imprévus (Marketing, maintenance)</td><td class="numeric">-</td><td class="numeric">-</td><td class="numeric">4 860</td></tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="total-label">TOTAL DU BUDGET DE FONCTIONNEMENT</td>
+                                <td class="total-amount numeric">26 460</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <p class="budget-note">
+                    <span class="note-emphasis">Note d'Expertise :</span> Ce budget couvre l'installation des équipements essentiels et le fonctionnement de la structure du Collectif BEN'ART sur une période de 36 mois (3 ans), hors budgets spécifiques pour les événements majeurs (Agora, Beni Cœur, etc.).
+                </p>
+            </div>
+        </section>
+        
+        <section id="partenariat" class="form-section">
+            <div class="content-container">
+                <h2 class="text-center-wrapper">Partenariat Institutionnel : Construire un Pont vers l'Art</h2>
+                
+                <div class="partnership-content">
+                    <p class="intro-text">
+                        Si votre organisation souhaite un partenariat stratégique pour la sensibilisation communautaire, les projets d'aide ou l'éducation, le Collectif BEN'ART est un allié de marque. Nous apportons l'angle artistique nécessaire pour une pénétration et un impact durables dans la communauté.
+                    </p>
+                    
+                    <form action="submit_partnership.php" method="POST" class="partnership-form">
+                        <div class="form-group">
+                            <label for="org_name">Nom de l'Organisation / ONG </label>
+                            <input type="text" id="org_name" name="org_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact_name">Nom du Contact </label>
+                            <input type="text" id="contact_name" name="contact_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse Email </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="goal">Objectif de la collaboration </label>
+                            <select id="goal" name="goal" required>
+                                <option value="" disabled selected>Sélectionner un objectif</option>
+                                <option value="financement">Soutien Budgétaire</option>
+                                <option value="sensibilisation">Projet de Sensibilisation Communautaire</option>
+                                <option value="echange">Échange Culturel / Expertise</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Votre Proposition Détaillée </label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button primary-green">Soumettre la Demande de Partenariat</button>
+                    </form>
+                    <button type="quit" class="quit-button primary-red"><a href="acceuil.html">retourner a l'acceuil</a></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        </footer>
+
+    <script src="nag.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+          document.getElementById("loader").style.display = "none";
+        },1700);
+      </script>
+      
+</body>
+<div id="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">BEN'ART</p>
+</div>
+</html>
